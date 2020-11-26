@@ -20,7 +20,7 @@ class AddContact extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="addContact">
                     <div>
                         <label htmlFor="name">Name:</label>
                         <input type="text" id="name" onChange={this.handleChange} />

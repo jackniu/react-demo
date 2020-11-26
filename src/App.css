@@ -1,3 +1,15 @@
 body {
   padding: 20px;
 }
+.ContactForm{
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.ContactForm > div,
+.addContact > div {
+  display: inline-block;
+  margin-right: 20px;
+}
+.addContact > div {
+  padding: 10px 0;
+}
