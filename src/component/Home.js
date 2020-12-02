@@ -54,4 +54,5 @@ const mapStateToProps = (state) => {
     }
 }
 
+// connect方法会返回一个高阶组件，Home作为组件参数进行传递
 export default connect(mapStateToProps)(Home)
