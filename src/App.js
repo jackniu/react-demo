@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import Post from './Post';
 
 class App extends React.Component {
     render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={Contact} />
                         <Route path="/" exact component={Home} />
+                        <Route path="/:post_id" component={Post} />
                     </Switch>
                 </div>
             </Router>
