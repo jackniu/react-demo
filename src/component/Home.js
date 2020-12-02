@@ -2,7 +2,8 @@ import React from 'react'
 // import Rainbow from './hoc/Rainbow'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Pokeball from './pokeball.png'
+import Pokeball from '../pokeball.png';
+import { connect } from 'react-redux';
 
 class Home extends React.Component {
     state = {
@@ -46,4 +47,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default connect()(Home)

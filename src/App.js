@@ -4,11 +4,11 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Post from './Post';
+import Navbar from './component/Navbar';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
+import Post from './component/Post';
 
 class App extends React.Component {
     render() {
