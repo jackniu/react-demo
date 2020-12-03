@@ -1,7 +1,7 @@
 import React, { createContext, Component } from 'react'
 
 // 1. 创建context，保存在变量ThemeContext里
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 
 export class ThemeContextProvider extends Component {
     // 创建共享的数据，存在state里
