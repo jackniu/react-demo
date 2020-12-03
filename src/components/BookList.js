@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
 
-export class BookList extends Component {
+class BookList extends Component {
     // 只有类组件才可以使用static，函数组件请参照官方文档；
     // static contextType = ThemeContext;
     render() {
