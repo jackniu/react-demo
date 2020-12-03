@@ -1,3 +1,5 @@
+import { act } from "react-dom/test-utils";
+
 const initState = {
     posts: [
         {
@@ -19,6 +21,18 @@ const initState = {
 }
 
 const rootReducer = (state = initState, action) => {
+    console.log(action);
+    if (action.type === 'DELETE_POST') {
+        let newPost = state.posts.filter(post => {
+            return post.id !== action.id
+        });
+
+        return {
+            ...state,
+            posts: newPost,
+        }
+    }
+
     return state;
 }
 
