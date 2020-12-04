@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { v4 as uuid } from 'uuid'
 
 const SongList = () => {
+    const [songs, setSongs] = useState([
+        { title: '少年', id: 1 },
+        { title: '小苹果', id: 2 },
+        { title: '琵琶行', id: 3 },
+    ]);
+    const addSong = () => {
+        setSongs([...songs, { title: '一生有你', id: uuid() }])
+    }
     return (
         <div className="song-list">
             <ul>
-                <li>少年 - 梦然</li>
-                <li>小苹果 - 筷子兄弟</li>
-                <li>琵琶行 - 沈谧仁 奇然</li>
+                {songs.map(song => {
+                    return (
+                        <li key={song.id}>{song.title}</li>
+                    )
+                })}
             </ul>
+            <button onClick={addSong}>添加歌曲</button>
         </div>
     )
 }
